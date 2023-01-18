@@ -215,5 +215,76 @@
     to get dummy text<br/>
 
     Checkout my <a href="other-page.html">other page</a>
+
+    <!--Grad/Challenge Portion Starts Here-->
+    <h2>Table of Contents (iFrames)</h2>
+    <ul>
+        <li><a href="#embedding-website">Embedding other websites</a></li>
+        <li><a href="#embedding-youtube">Embedding YouTube videos</a></li>
+        <li><a href="#embedding-slides">Embedding Google Slides</a></li>
+    </ul>
+
+    <a name="embedding-website"></a>
+    <h2>Embedding other websites</h2>
+    <a href="#top">Top</a><br />
+    <iframe width="600"
+            height="400"
+            src="https://en.wikipedia.org/wiki/Byzantine_Empire">
+    </iframe>
+
+    <a name="embedding-youtube"></a>
+    <h2>Embedding YouTube videos</h2>
+    <a href="#top">Top</a><br />
+    <iframe width="560"
+            height="315"
+            src="https://www.youtube.com/embed/VU-QvYwBiRw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+    </iframe>
+
+    <a name="embedding-slides"></a>
+    <h2>Embedding Google Slides</h2>
+    <a href="#top">Top</a><br />
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQoIYM2gXzRLKt4q5D2-ZahG7zvVcAipkRvj5k9GVLiGDs8NPlLpO3Q08cPUKQbqhL6g8aZp1ZJSwrw/embed?start=false&loop=false&delayms=3000"
+            frameborder="0"
+            width="680"
+            height="418"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true">
+    </iframe>
+
+    <h2>Table of Contents (SVG)</h2>
+    <ul>
+        <li><a href="#draw-rectangle">Drawing rectangles</a></li>
+        <li><a href="#draw-circle">Drawing circles</a></li>
+        <li><a href="#draw-polygon">Drawing polygons</a></li>
+    </ul>
+
+    <a name="draw-rectangle"></a>
+    <h2>Drawing rectangles</h2>
+    <a href="#top">Top</a><br />
+    <svg width="300" height="100">
+        <rect width="300" height="100"
+              style="fill:rgb(170,140,480); stroke-width:2; stroke:rgb(0,0,0)" />
+    </svg>
+
+    <a name="draw-circle"></a>
+    <h2>Drawing circles</h2>
+    <a href="#top">Top</a><br />
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"
+                stroke="blue" stroke-width="1" fill="orange" />
+    </svg>
+
+    <a name="draw-polygon"></a>
+    <h2>Drawing polygons</h2>
+    <a href="#top">Top</a><br />
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+                 style="fill:yellow; stroke:purple; stroke-width:3; fill-rule:evenodd;" />
+    </svg>
 </body>
 </html>

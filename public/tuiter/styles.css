@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    font-family: Arial;
+    line-height: 20px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wd-separator {
+    background-color: #16181d;
+    height: 5px;
+}
+
+.wd-left-sidebar {
+    padding-left: 10px;
+    height: 100%;
+    float: left;
+}
+
+.wd-right-sidebar {
+    padding-right: 10px;
+    height: 100%;
+    float: left;
+}
+
+.wd-horizontal-border {
+    border-bottom: 2px solid rgb(47, 51, 54);
+    width: 100%;
+}
+
+.wd-main-content {
+    float: left;
+    border-left: 2px solid rgb(47, 51, 54);
+    border-right: 2px solid rgb(47, 51, 54);
+}
+
+.wd-grid-row {
+    clear: both;
+    padding: 16px;
+}

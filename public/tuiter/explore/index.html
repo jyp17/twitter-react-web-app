@@ -10,23 +10,23 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-2">
+            <div class="col-2 col-lg-1 col-xl-2">
                 <div class="list-group">
                     <li class="list-group-item"><i class="fa fa-crow"></i></li>
-                    <a href="" class="list-group-item list-group-item-action"><i class="fa fa-home">&nbsp</i>Home</a>
-                    <a href="" class="list-group-item list-group-item-action active"><i class="fa fa-hashtag">&nbsp</i>Explore</a>
-                    <a href="" class="list-group-item list-group-item-action"><i class="fa fa-bell">&nbsp</i>Notifications</a>
-                    <a href="" class="list-group-item list-group-item-action"><i class="fa fa-envelope">&nbsp</i>Messages</a>
-                    <a href="" class="list-group-item list-group-item-action"><i class="fa fa-bookmark">&nbsp</i>Bookmarks</a>
-                    <a href="" class="list-group-item list-group-item-action"><i class="fa fa-list">&nbsp</i>Lists</a>
-                    <a href="" class="list-group-item list-group-item-action"><i class="fa fa-user">&nbsp</i>Profile</a>
-                    <a href="" class="list-group-item list-group-item-action"><i class="fa fa-ellipsis-h">&nbsp</i>More</a>
+                    <a href="../home.html" class="list-group-item list-group-item-action"><i class="fa fa-home"></i><span class="d-none d-xl-inline"> Home</span></a>
+                    <a href="" class="list-group-item list-group-item-action active"><i class="fa fa-hashtag"></i><span class="d-none d-xl-inline"> Explore</span></a>
+                    <a href="../notifications.html" class="list-group-item list-group-item-action"><i class="fa fa-bell"></i><span class="d-none d-xl-inline"> Notifications</span></a>
+                    <a href="../messages.html" class="list-group-item list-group-item-action"><i class="fa fa-envelope"></i><span class="d-none d-xl-inline"> Messages</span></a>
+                    <a href="../bookmarks/index.html" class="list-group-item list-group-item-action"><i class="fa fa-bookmark"></i><span class="d-none d-xl-inline"> Bookmarks</span></a>
+                    <a href="../lists.html" class="list-group-item list-group-item-action"><i class="fa fa-list"></i><span class="d-none d-xl-inline"> Lists</span></a>
+                    <a href="../profile.html" class="list-group-item list-group-item-action"><i class="fa fa-user"></i><span class="d-none d-xl-inline"> Profile</span></a>
+                    <a href="../more.html" class="list-group-item list-group-item-action"><i class="fa fa-ellipsis-h"></i><span class="d-none d-xl-inline"> More</span></a>
                 </div>
                 <div class="d-grid wd-spacing">
                     <button class="btn btn-primary wd-rounded-btn" type="button">Tuit</button>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-10 col-lg-7 col-xl-6">
                 <div class="row">
                     <div class="col-11">
                         <div class="input-group">
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="col-1">
-                        <a href="explore-settings.html"><i class="fa fa-cog wd-vertical-align"></i></a>
+                        <a href="explore-settings.html"><i class="fa fa-cog wd-vertical-align pt-2"></i></a>
                     </div>
                 </div>
                 <div class="wd-spacing">
@@ -44,7 +44,7 @@
                         <li class="nav-item"><a class="nav-link" href="trending.html">Trending</a></li>
                         <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
                         <li class="nav-item"><a class="nav-link" href="sports.html">Sports</a></li>
-                        <li class="nav-item"><a class="nav-link" href="entertainment.html">Entertainment</a></li>
+                        <li class="nav-item d-none d-md-block"><a class="nav-link" href="entertainment.html">Entertainment</a></li>
                     </ul>
                 </div>
                 <div class="wd-featured-tuit wd-spacing">
@@ -53,128 +53,118 @@
                 </div>
                 <div class="list-group">
                     <li class="list-group-item">
-                        <div class="row">
-                            <div class="col-xxl-10">
-                                <div class="wd-grey-text">Web Development</div>
-                                <div><span class="wd-keyword">ReactJS <i class="fa fa-check-circle"></i></span><span class="wd-grey-text"> - 2h</span></div>
-                                <div class="wd-keyword">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div>
+                                <span class="wd-grey-text">Web Development</span></br>
+                                <span class="wd-keyword">ReactJS <i class="fa fa-check-circle"></i></span><span class="wd-grey-text"> - 2h</span></br>
+                                <span class="wd-keyword">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</span>
                             </div>
-                            <div class="col-xxl-2">
+                            <div>
                                 <img class="wd-tuit-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" />
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <div class="row">
-                            <div class="col-xxl-10">
-                                <div><span class="wd-keyword">JavaScript <i class="fa fa-check-circle"></i></span><span class="wd-grey-text"> - 2h</span></div>
-                                <div class="wd-keyword">JavaScript is programming language that can run on browsers as well as desktops</div>
-                                <div class="wd-grey-text">123K Tuits</div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div>
+                                <span class="wd-keyword">JavaScript <i class="fa fa-check-circle"></i></span><span class="wd-grey-text"> - 2h</span></br>
+                                <span class="wd-keyword">JavaScript is programming language that can run on browsers as well as desktops</span></br>
+                                <span class="wd-grey-text">123K Tuits</span>
                             </div>
-                            <div class="col-xxl-2">
+                            <div>
                                 <img class="wd-tuit-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" />
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <div class="row">
-                            <div class="col-xxl-10">
-                                <div class="wd-grey-text">Web Development</div>
-                                <div class="wd-keyword">jQuery</div>
-                                <div class="wd-grey-text">123K Tuits</div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div>
+                                <span class="wd-grey-text">Web Development</span></br>
+                                <span class="wd-keyword">jQuery</span></br>
+                                <span class="wd-grey-text">123K Tuits</span></br>
                             </div>
-                            <div class="col-xxl-2">
+                            <div>
                                 <img class="wd-tuit-image" src="https://www.pngitem.com/pimgs/m/206-2069866_transparent-css3-logo-png-jquery-logo-png-png.png" />
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <div class="row">
-                            <div class="col-xxl-10">
-                                <div class="wd-grey-text">Web Development</div>
-                                <div><span class="wd-keyword">NodeJS <i class="fa fa-check-circle"></i></span><span class="wd-grey-text"> - 2h</span></div>
-                                <div class="wd-grey-text">123K Tuits</div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <div>
+                                <span class="wd-grey-text">Web Development</span></br>
+                                <span class="wd-keyword">NodeJS <i class="fa fa-check-circle"></i></span><span class="wd-grey-text"> - 2h</span></br>
+                                <span class="wd-grey-text">123K Tuits</span>
                             </div>
-                            <div class="col-xxl-2">
+                            <div>
                                 <img class="wd-tuit-image" src="https://png.pngitem.com/pimgs/s/168-1680234_nodejs-logo-svg-hd-png-download.png" />
                             </div>
                         </div>
                     </li>
                 </div>
             </div>
-            <div class="col-4 list-group">
+            <div class="d-none d-lg-block col-lg-4 list-group">
                 <li class="list-group-item wd-keyword">Who to follow</li>
                 <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-2"><img class="wd-user-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" /></div>
-                        <div class="col-7">
-                            <div class="wd-keyword">
-                                Java
-                                <i class="fa fa-check-circle"></i>
+                    <div class="d-flex flex-row justify-content-between">
+                        <div>
+                            <img class="wd-user-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" />
+                            <div class="d-inline-block wd-vertical-align ms-0 ms-xl-2 ms-xxl-3">
+                                <span class="wd-keyword">Java </span><i class="fa fa-check-circle"></i></br>@Java
                             </div>
-                            <div>@Java</div>
                         </div>
-                        <div class="col-3">
+                        <div class="pt-1 pb-1">
                             <button class="btn btn-primary wd-rounded-btn">Follow</button>
                         </div>
                     </div>
                 </li>
                 <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-2"><img class="wd-user-icon" src="https://pbs.twimg.com/profile_images/1405603367045324801/CaXrPnKL_400x400.jpg" /></div>
-                        <div class="col-7">
-                            <div class="wd-keyword">
-                                Relativity Space
-                                <i class="fa fa-check-circle"></i>
+                    <div class="d-flex flex-row justify-content-between">
+                        <div>
+                            <img class="wd-user-icon" src="https://pbs.twimg.com/profile_images/1405603367045324801/CaXrPnKL_400x400.jpg" />
+                            <div class="d-inline-block wd-vertical-align ms-0 ms-xl-2 ms-xxl-3">
+                                <span class="wd-keyword">Relativity Space </span><i class="fa fa-check-circle"></i></br>@relativityspace
                             </div>
-                            <div>@relativityspace</div>
                         </div>
-                        <div class="col-3">
+                        <div class="pt-1 pb-1">
                             <button class="btn btn-primary wd-rounded-btn">Follow</button>
                         </div>
                     </div>
                 </li>
                 <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-2"><img class="wd-user-icon" src="https://static.cdnlogo.com/logos/v/11/virgin.svg" /></div>
-                        <div class="col-7">
-                            <div class="wd-keyword">
-                                Virgin Galactic
-                                <i class="fa fa-check-circle"></i>
+                    <div class="d-flex flex-row justify-content-between">
+                        <div>
+                            <img class="wd-user-icon" src="https://static.cdnlogo.com/logos/v/11/virgin.svg" />
+                            <div class="d-inline-block wd-vertical-align ms-0 ms-xl-2 ms-xxl-3">
+                                <span class="wd-keyword">Virgin Galactic </span><i class="fa fa-check-circle"></i></br>@virgingalactic
                             </div>
-                            <div>@virgingalactic</div>
                         </div>
-                        <div class="col-3">
+                        <div class="pt-1 pb-1">
                             <button class="btn btn-primary wd-rounded-btn">Follow</button>
                         </div>
                     </div>
                 </li>
                 <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-2"><img class="wd-user-icon" src="https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB_400x400.jpg" /></div>
-                        <div class="col-7">
-                            <div class="wd-keyword">
-                                NASA
-                                <i class="fa fa-check-circle"></i>
+                    <div class="d-flex flex-row justify-content-between">
+                        <div>
+                            <img class="wd-user-icon" src="https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB_400x400.jpg" />
+                            <div class="d-inline-block wd-vertical-align ms-0 ms-xl-2 ms-xxl-3">
+                                <span class="wd-keyword">NASA </span><i class="fa fa-check-circle"></i></br>@NASA
                             </div>
-                            <div>@NASA</div>
                         </div>
-                        <div class="col-3">
+                        <div class="pt-1 pb-1">
                             <button class="btn btn-primary wd-rounded-btn">Follow</button>
                         </div>
                     </div>
                 </li>
                 <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-2"><img class="wd-user-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png" /></div>
-                        <div class="col-7">
-                            <div class="wd-keyword">
-                                Tesla
-                                <i class="fa fa-check-circle"></i>
+                    <div class="d-flex flex-row justify-content-between">
+                        <div>
+                            <img class="wd-user-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png" />
+                            <div class="d-inline-block wd-vertical-align ms-0 ms-xl-2 ms-xxl-3">
+                                <span class="wd-keyword">Tesla </span><i class="fa fa-check-circle"></i></br>@Tesla
                             </div>
-                            <div>@Tesla</div>
                         </div>
-                        <div class="col-3">
+                        <div class="pt-1 pb-1">
                             <button class="btn btn-primary wd-rounded-btn">Follow</button>
                         </div>
                     </div>

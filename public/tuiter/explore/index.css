@@ -1,16 +1,15 @@
-.container {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .input-group-text.wd-search-box {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    background-color: #eff3f4;
+    border: none;
 }
 
 .form-control.wd-search-box {
+    background-color: #eff3f4;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    border: none;
     width: 10%;
 }
 
@@ -18,6 +17,7 @@
     height: 45px;
     width: 45px;
     border-radius: 50%;
+    background-color: white;
 }
 
 .wd-keyword {
@@ -57,71 +57,81 @@
     border-radius: 15px;
 }
 
-/*
-.wd-search {
-    float: left;
-    border-radius: 50px;
-    width: 90%;
-    background-color: rgb(47, 51, 54);
-    border-width: 0px;
-    color: white;
-    padding: 5px;
-    padding-inline: 5px;
+.list-group-item {
+    border:none;
 }
 
-.wd-explore-settings {
-    float: right;
-    padding-top: 5px;
-    width: 25px;
-    height: 25px;
-}
-
-.wd-navigation {
-    color: rgb(110, 118, 125);
-    font-size: 15px;
+.list-group-item.active {
+    background-color: white !important;
+    color: black;
     font-weight: bold;
-    margin: 16px;
 }
 
-.wd-selected-nav {
-    color: rgb(29, 161, 242);
-    font-size: 15px;
+.nav-tabs {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
     font-weight: bold;
-    margin: 16px;
+    color: grey;
     padding-bottom: 15px;
-    border-bottom: 3px solid rgb(29, 161, 242);
-    border-radius: 1px;
-    width: fit-content;
 }
 
-.wd-suggested-post {
-    padding: 16px;
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-    column-span: all;
-    border-bottom: 1px solid rgb(47, 51, 54);
-    clear: both;
+.nav-link.active {
+    color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #1d9bf0 !important;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
 
-.wd-title {
-    color: white;
-    inline-size: 75%;
-    font-size: 15px;
+i {
+    height: 15px;
+    width: 15px;
+}
+
+.btn {
     font-weight: bold;
-}
-
-.wd-author {
     color: white;
 }
 
-.wd-post-text {
-    float: left;
-    inline-size: 75%;
+.btn-primary {
+    background-color: #1d9bf0;
+    border: none;
 }
 
-.wd-post-image {
-    float: right;
-    height: 100px;
-    width: 100px;
-    border-radius: 15px;
-}*/
+.btn-primary:hover {
+    background-color: #1d9bf0;
+}
+
+.wd-main-content {
+    border-left: 1px solid #eff3f4;
+    border-right: 1px solid #eff3f4;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wd-trending-topics {
+    border-top: 1px solid #eff3f4;
+    border-bottom: 1px solid #eff3f4;
+    border-radius: 0;
+}
+
+.wd-list-item-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.wd-suggested-accounts {
+    border-radius: 20px;
+}
+
+.wd-suggested-accounts li {
+    background-color: #eff3f4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

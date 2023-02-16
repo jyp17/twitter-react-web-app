@@ -16,6 +16,7 @@ function homeComponent() {
             ${PostSummaryList()}
          </div>
        </div>
+       </div>
    `);
 }
 

@@ -1,0 +1,58 @@
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-group-text.wd-search-box {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: white;
+}
+
+.form-control.wd-search-box {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 10%;
+}
+
+.wd-user-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.wd-keyword {
+    font-weight: bold;
+}
+
+.wd-rounded-btn {
+    border-radius: 25px;
+}
+
+.wd-vertical-align {
+    vertical-align: middle;
+}
+
+.wd-spacing {
+    margin-top: 7px;
+}
+
+.wd-featured-tuit {
+    position: relative;
+}
+
+.wd-featured-headline {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.wd-grey-text {
+    color: grey;
+}
+
+.wd-summary-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+}

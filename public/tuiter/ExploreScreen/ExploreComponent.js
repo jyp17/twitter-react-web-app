@@ -15,11 +15,11 @@ const ExploreComponent = () => {
             </div>
             <div class="wd-spacing">
                 <ul class="nav nav-tabs">
-                    <li class="nav-item"><a class="nav-link active" href="for-you.html">For you</a></li>
-                    <li class="nav-item"><a class="nav-link" href="trending.html">Trending</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sports.html">Sports</a></li>
-                    <li class="nav-item d-none d-md-block"><a class="nav-link" href="entertainment.html">Entertainment</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="">For you</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Trending</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Sports</a></li>
+                    <li class="nav-item d-none d-md-block"><a class="nav-link" href="">Entertainment</a></li>
                 </ul>
             </div>
             <div class="wd-featured-tuit wd-spacing">

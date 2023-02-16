@@ -1,7 +1,7 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import WhoToFollowList from "../WhoToFollowList/index.js";
 import ExploreComponent from "./ExploreComponent.js";
-function exploreComponent() {
+function exploreComp() {
     $('#wd-explore').append(`
          <div class="row mt-2">
          <div class="row mt-2">
@@ -18,4 +18,4 @@ function exploreComponent() {
    `);
 }
 
-$(exploreComponent);
+$(exploreComp);

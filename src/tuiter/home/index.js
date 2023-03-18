@@ -1,16 +1,8 @@
 import React from "react";
-import postsArray from "./posts.json";
-import PostItem from "./post-item";
-
+import TuitsListComponent from "../tuits/tuits-list";
 const HomeComponent = () => {
     return(
-        <ul className="list-group">
-            {
-                postsArray.map(post =>
-                    <PostItem key={post._id} post={post}/>
-                )
-            }
-        </ul>
+        <TuitsListComponent />
     );
 }
 export default HomeComponent;

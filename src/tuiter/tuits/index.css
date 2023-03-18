@@ -1,0 +1,6 @@
+button, button:focus {
+    background: transparent;
+    border: none;
+    color: grey;
+    padding: 0;
+}

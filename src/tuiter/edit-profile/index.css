@@ -7,22 +7,26 @@
     width: 100%;
 }
 
-.profile-avatar {
+.edit-avatar {
     height: 150px;
     width: 150px;
     border-radius: 50%;
     position: absolute;
-    bottom: 40%;
+    bottom: 64%;
     border: white 5px solid;
 }
 
-.edit-profile {
-    color: black;
+.save {
+    background-color: black;
+    color: white;
     font-weight: bold;
-    border: 1px solid lightgrey;
     border-radius: 25px;
-    padding-right: 15px;
-    padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cancel {
+    color: black;
 }

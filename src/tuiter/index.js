@@ -15,7 +15,7 @@ import EditProfile from "./edit-profile";
 const store = configureStore({
     reducer: {
         who: whoReducer,
-        tuits: tuitsReducer,
+        tuitsData: tuitsReducer,
         profile: profileReducer
     }
 });
@@ -29,7 +29,7 @@ function Tuiter() {
                 </div>
                 <div className="col-10 col-md-10 col-lg-7 col-xl-6" style={{"position": "relative"}}>
                     <Routes>
-                        <Route index element={<ExploreComponent/>}/>
+                        <Route index element={<HomeComponent/>}/>
                         <Route path="home" element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
                         <Route path="profile" element={<ProfileComponent/>}/>

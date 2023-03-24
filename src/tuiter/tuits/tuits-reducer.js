@@ -1,27 +1,34 @@
 import { createSlice } from "@reduxjs/toolkit";
 import tuits from './tuits.json';
+import {findTuitsThunk} from "../../services/tuits-thunk";
 
-const currentUser = {
-    "userName": "NASA",
-    "handle": "@nasa",
-    "image": "https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB_400x400.jpg",
-};
-
-const templateTuit = {
-    ...currentUser,
-    "topic": "Space",
-    "time": "2h",
-    "liked": false,
-    "replies": 0,
-    "retuits": 0,
-    "likes": 0,
+const initialState = {
+    tuits: [],
+    loading: false
 }
 
 const tuitsSlice = createSlice({
     name: 'tuits',
-    initialState: tuits,
+    initialState,
+    extraReducers: {
+        [findTuitsThunk.pending]:
+            (state) => {
+                state.loading = true
+                state.tuits = []
+            },
+        [findTuitsThunk.fulfilled]:
+            (state, { payload }) => {
+                state.loading = false
+                state.tuits = payload
+            },
+        [findTuitsThunk.rejected]:
+            (state, action) => {
+                state.loading = false
+                state.error = action.error
+            }
+    },
     reducers: {
-        createTuit(state, action) {
+        /*createTuit(state, action) {
             state.unshift({
                 ...action.payload,
                 ...templateTuit,
@@ -39,7 +46,7 @@ const tuitsSlice = createSlice({
                 tuit._id === action.payload._id)
             tuit.likes = tuit.liked? tuit.likes - 1 : tuit.likes + 1;
             tuit.liked = !tuit.liked;
-        }
+        }*/
     }
 });
 

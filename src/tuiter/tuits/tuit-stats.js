@@ -1,13 +1,17 @@
 import React from "react";
 import "./index.css";
 import {updateLikes} from "./tuits-reducer";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
+import {updateTuitThunk} from "../../services/tuits-thunk";
 
 const TuitStats = ({stats}) => {
-    const tuits = useSelector(state => state.tuits);
     const dispatch = useDispatch();
-    const likeClickHandler = (tuit) => {
-        dispatch(updateLikes(tuit))
+    const likeClickHandler = () => {
+        dispatch(updateTuitThunk({
+            ...stats,
+            likes: stats.liked? stats.likes - 1 : stats.likes + 1,
+            liked: !stats.liked
+        }));
     }
     return (
         <div className="row pt-3" style={{"color":"grey"}}>
@@ -18,7 +22,7 @@ const TuitStats = ({stats}) => {
                 <button><i className="bi bi-arrow-repeat pe-3"></i></button>{stats.retuits}
             </div>
             <div className="col">
-                <button onClick={()=>likeClickHandler(stats)}>
+                <button onClick={()=>likeClickHandler()}>
                     <i className={`bi ${stats.liked? 'bi-heart-fill' : 'bi-heart'} pe-3`} style={{"color": `${stats.liked? 'red' : 'grey'}`}}></i>
                 </button>{stats.likes}
             </div>
